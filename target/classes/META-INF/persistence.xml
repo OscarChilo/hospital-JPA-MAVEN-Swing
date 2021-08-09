@@ -7,6 +7,8 @@
         
         <persistence-unit name="HospitalUnit">
         	<class>com.bicentenario.hospital.model.Paciente</class>
+        	<class>com.bicentenario.hospital.model.Caso</class>
+        	
         	<properties>
         		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_hospital"/>
         		<property name="javax.persistence.jdbc.user" value="root"/>

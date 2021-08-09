@@ -90,15 +90,68 @@ public class PrincipalForm extends JFrame {
 		mnNewMenu_1.add(mntmNewMenuItem);
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("    Medicos");
+		mntmNewMenuItem_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				MedicoForm medicoVentana=new MedicoForm();
+				escritorio.add(medicoVentana);
+
+				Dimension desktopSize = escritorio.getSize();
+		        Dimension FrameSize = medicoVentana.getSize();
+		        //nuevaVentana.setMaximizable(true);
+		        //nuevaVentana.setma;
+		        medicoVentana.setLocation((desktopSize.width - FrameSize.width)/20, (desktopSize.height- FrameSize.height)/15);
+		        medicoVentana.show();
+			}
+		});
 		mnNewMenu_1.add(mntmNewMenuItem_1);
 		
 		JMenuItem mntmNewMenuItem_2 = new JMenuItem("    Enfermedades");
+		mntmNewMenuItem_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				EnfermedadForm enfermedadVentana=new EnfermedadForm();
+				escritorio.add(enfermedadVentana);
+
+				Dimension desktopSize = escritorio.getSize();
+		        Dimension FrameSize = enfermedadVentana.getSize();
+		        //nuevaVentana.setMaximizable(true);
+		        //nuevaVentana.setma;
+		        enfermedadVentana.setLocation((desktopSize.width - FrameSize.width)/20, (desktopSize.height- FrameSize.height)/15);
+		        enfermedadVentana.show();
+			}
+		});
 		mnNewMenu_1.add(mntmNewMenuItem_2);
 		
 		JMenuItem mntmNewMenuItem_3 = new JMenuItem("    Medicamentos");
+		mntmNewMenuItem_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MedicamentoForm medicamentoVentana=new MedicamentoForm();
+				escritorio.add(medicamentoVentana);
+
+				Dimension desktopSize = escritorio.getSize();
+		        Dimension FrameSize = medicamentoVentana.getSize();
+		        //nuevaVentana.setMaximizable(true);
+		        //nuevaVentana.setma;
+		        medicamentoVentana.setLocation((desktopSize.width - FrameSize.width)/20, (desktopSize.height- FrameSize.height)/15);
+		        medicamentoVentana.show();
+			}
+		});
 		mnNewMenu_1.add(mntmNewMenuItem_3);
 		
 		JMenuItem mntmNewMenuItem_4 = new JMenuItem("    Casos");
+		mntmNewMenuItem_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				CasoForm casoVentana=new CasoForm();
+				escritorio.add(casoVentana);
+
+				Dimension desktopSize = escritorio.getSize();
+		        Dimension FrameSize = casoVentana.getSize();
+		        //nuevaVentana.setMaximizable(true);
+		        //nuevaVentana.setma;
+		        casoVentana.setLocation((desktopSize.width - FrameSize.width)/20, (desktopSize.height- FrameSize.height)/15);
+		        casoVentana.show();
+			}
+		});
 		mnNewMenu_1.add(mntmNewMenuItem_4);
 	}
 }

@@ -16,6 +16,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class PrincipalForm extends JFrame {
 
@@ -49,9 +51,18 @@ public class PrincipalForm extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		
 		JDesktopPane escritorio = new JDesktopPane();
+		
 		escritorio.setBounds(0, 33, 1280, 708);
+		
 		contentPane.add(escritorio);
+		
+		JLabel lblNewLabel = new JLabel("HOSPITAL      BICENTENARIO");
+		lblNewLabel.setFont(new Font("Rockwell", Font.BOLD, 26));
+		lblNewLabel.setBounds(479, 205, 613, 93);
+		escritorio.add(lblNewLabel);
+		
 		
 		JMenuBar menuPrincipal = new JMenuBar();
 		menuPrincipal.setBounds(0, 0, 1280, 32);
